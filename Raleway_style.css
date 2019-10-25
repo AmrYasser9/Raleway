@@ -1,0 +1,623 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+ 
+  background-color: transparent!important;
+  overflow: hidden;
+}
+*
+{
+    margin:0;
+    padding: 0;
+}
+#loading
+{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 99999999999999999999999999 !important;
+    background-color: #2a80b9;
+   
+}
+.spinner {
+  width: 40px;
+  height: 40px;
+  background-color: white;
+
+  margin: 350px auto;
+  -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
+  animation: sk-rotateplane 1.2s infinite ease-in-out;
+}
+
+@-webkit-keyframes sk-rotateplane {
+  0% { -webkit-transform: perspective(120px) }
+  50% { -webkit-transform: perspective(120px) rotateY(180deg) }
+  100% { -webkit-transform: perspective(120px) rotateY(180deg)  rotateX(180deg) }
+}
+
+@keyframes sk-rotateplane {
+  0% { 
+    transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg) 
+  } 50% { 
+    transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg) 
+  } 100% { 
+    transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+    -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+  }
+}
+
+#btnUp
+{
+   
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    color: white;
+    z-index: 99999999;
+    background-color: #2a80b9;
+    display: none;
+    filter: drop-shadow(3px 3px 1px rgba(0,0,0,0.5));
+}
+.carousel
+{
+
+    height: 100%;
+    position: relative;
+}
+
+
+
+.navigation
+{
+    margin-bottom: 0;
+}
+.navbar
+{
+    background-color: rgba(0,0,0,0) ;
+    
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    position: fixed;
+    z-index: 99999999999999999 !important ; 
+}
+.slider-left
+{
+    width: 46px;
+    height: 105px;
+    background-color: black;
+    border-radius: 3px;
+    opacity: 0.5;
+    position: relative;
+    top: 50%;
+}
+.caption
+{
+    text-align: center;
+    background-color: transparent !important;
+    width: 80%;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 100px;
+    right: 100px;
+    font-size: 15px;
+    transform: translateY(-50%);
+    z-index: 9999;
+    box-sizing: border-box;
+   
+    
+
+}
+.caption h2
+{
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 58px;
+    font-weight:200;
+    line-height: 66px;
+    text-transform: capitalize;
+}
+
+.caption p
+{
+    color: #fff;
+    padding-top: 15px;
+    padding-bottom: 35px;
+    width: 80%;
+    margin: auto;
+}
+.button
+{
+    background-color: #2a80b9;
+    color: #fff;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 3px;
+}
+.button:hover
+{
+    background-color: #fff;
+    color: #333;
+}
+
+.navigation li
+{
+   
+    font-size: 20px;
+    display: flex;
+    align-content: center;
+   float: right;
+   padding: 20px 20px;
+   
+    position: relative;
+    right: 130px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    
+}
+
+.navigation a
+{
+    color: white;
+    text-decoration: none !important;
+}
+.navigation a:hover
+{
+    color: #2a80b9 !important;
+}
+.home
+{
+    color: #2a80b9 !important;
+}
+.text
+{
+   background-color: transparent;
+    z-index: 1;
+}
+.logo
+{
+    float: left;
+    width: 150px;
+    position: relative;
+    left: 130px;
+}
+
+.carousel-inner
+{
+    height: 700px;
+}
+
+
+.d-block w-100
+{
+    
+
+    background-size: contain;
+}
+.content
+{
+    text-align: center;
+    margin: auto;
+    display: block;
+    background-color: transparent;
+    font-family: 'Raleway', sans-serif;
+    color: #636363;
+    
+    
+    
+}
+.content h2
+{
+    font-size: 58px;
+    font-weight: 200;
+    line-height: 66px;
+    text-transform: capitalize;
+}
+
+.content .btn
+{
+  background-color:#2a80b9;
+    color: white;
+}
+
+.weare
+{
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    margin-top: 25px;
+    color: #636363;
+    font-size: 15px;
+}
+
+
+.weare h2
+{
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #292929;
+    
+}
+
+.weare p
+{
+    width: 70%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.container
+{
+    display: block;
+    width: 25%;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 20px ;
+}
+.row
+{
+    margin-right: -15px;
+    margin-left: -15px;
+    
+}
+
+
+.colums
+{
+    border: 1px solid #eee;
+    margin-top: 40px;
+
+}
+.colums i
+{
+    background-color: #2a80b9;
+    color: white;
+    font-size: 15px;
+    padding: 10px;
+}
+
+.colums h4
+{
+    font-size: 18px;
+    margin-top: 10px;
+    color: #292929;
+}
+.colums p
+{
+        color: #636363;
+        font-size: 15px;
+        letter-spacing: 1px;
+}
+.three
+{
+    background-color: #f7f7f7;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    padding: 30px 0px;
+    margin-top: 30px;
+    
+    
+}
+.numbers
+{
+    border-right: 1px solid #ddd;
+}
+.last
+{
+    border-right: none;
+}
+.numbers  h2
+{
+    color: #232323;
+    font-size: 50px;
+    margin-bottom: 10px;
+    font-weight: 300;
+}
+.numbers  h3
+{
+    color: #232323;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+.team
+{
+    padding: 40px 0px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    
+}
+.team-des h2
+{
+    font-size: 36px;
+    margin-bottom: 20px;
+    margin-top: 0;
+    position: relative;
+    text-transform: capitalize;
+    font-weight: 300;
+    color: #292929;
+}
+.team-des p
+{
+    margin: auto;
+    width: 70%;
+}
+
+.team-container
+{
+    
+    margin: auto;
+    width: 80%;
+   
+}
+.item
+{
+    position: relative;
+    overflow: hidden;
+
+}
+.item img
+{
+    width: 100%;
+    transition: transform 1s;
+}
+.item:hover img
+{
+    
+    transform: scale(1.2,1.2);
+}
+.teamOne 
+{
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0,0,0,0.9);
+    position: absolute;
+    color: white;
+    bottom: 0px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity ;
+    overflow: hidden;
+}
+.teamOne:hover
+{
+    opacity: 1;
+}
+.desc
+{
+   width: 100%;
+   position: absolute;
+   bottom: -100px;
+   transition-delay: 1s;
+   transition: all 0.5s;
+   
+}
+.teamOne:hover .desc
+{
+    bottom: 15px;
+}
+
+.desc h4
+{
+    font-size: 22px;
+    font-weight: 600;
+}
+.desc h5
+{
+    font-size: 16px;
+    font-weight: 500;
+}
+.desc i
+{
+    padding: 0px 5px;
+    margin-top: 15px;
+}
+.prog-four
+{
+    width: 100%;
+    height: 500px;
+    
+ 
+}
+.prog
+{
+        
+    width: 100%;
+    height: 500px;
+    background-image: url(Image/process-bg.jpg);
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.prog:before
+{
+   background : rgba(255,255,255,0.85); 
+}
+#carouselExampleSlidesOnly
+{
+    width: 50%;
+    height: 250px;
+    text-align: center;
+    top:10px;
+    margin-right: 100px;
+    margin-left: 100px;
+
+}
+.btns
+{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    top: 50%;
+
+    
+}
+    
+#prevBtn
+{
+     
+ color: #2a80b9;
+    position: absolute;
+    right: 102%;     
+    opacity: 0;
+}
+#nexBtn
+{
+    color: #2a80b9;
+    position: absolute;
+    left: 102%;
+        opacity: 0;
+
+}
+.carousel-item h4
+{
+   font-size: 22px;
+    font-weight: 600;
+   color: #292929;
+   font-family: inherit;
+   letter-spacing: 2px;
+    margin-bottom: 40px;
+    
+    
+}
+.carousel-item p
+{
+    line-height: 28px;
+    color: #636363;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px; 
+}
+.progress
+{
+    margin: 20px 0px;
+}
+.progress-bar
+{
+    background: #2a80b9 !important;
+}
+.latest-work
+{
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    color: #636363;
+    font-size: 15px;
+    width: 60%;
+    margin: auto;
+}
+.latest-work h2
+{
+    font-size: 36px;
+    margin-bottom: 20px;
+    margin-top: 60px;
+    color: #292929;
+}
+.latest-work p
+{
+    padding-bottom: 40px;
+}
+.portfolio li
+{
+    text-decoration: none;
+    display: inline-block;
+    padding: 15px 10px;
+    font-size: 12px;
+    font-weight: 600;
+    color: green;
+}
+.portfolio li:hover 
+{
+    color: yellow; 
+}
+.all
+{
+    color: #292929;
+}
+#work
+{
+    
+}
+#quote
+{
+    width: 100%;
+    height: 400px;
+    margin-top: 60px;
+    background-image: url(Image/parallax-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.clints
+{
+    width: 100%;
+    height: 150px;
+    background-color: #2a80b9;
+}
+.logos
+{
+    margin: auto;
+    margin-top: 50px;
+    width: 90% !important;
+    padding: 0px 50px;
+    display: flex;
+    justify-content: center;
+  
+}
+.logos img
+{
+    padding:0px 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.portfolio li:hover
+{
+    color: red !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
